@@ -1,0 +1,12 @@
+{
+    "project_name": "new_project",
+    "documentation": "doc",
+    "data": "data",
+    "raw_data": "raw_data",
+    "clean_data": "clean_data",
+    "sample_info": "sampel_info",
+    "results": "results",
+    "source": "src",
+    "bin": "bin",
+    "README": "README"
+}
