@@ -7,7 +7,7 @@ make subgroups: strand (fwd/rev), replicate (if spcified), kind (signal, peak)
 
 """
 
-import glob, os, re, argparse
+import glob, os, sys, re, argparse
 import subprocess, shlex, logging
 import trackhub
 
@@ -36,10 +36,10 @@ def get_args():
     parser.add_argument('--server', default='yulab_tracks',
         help='Name of directory to save track files, default: [yulab_tracks]')
     parser.add_argument('--server-dir', dest='server_dir',
-        default='/data/public/upload/ucsc_trackhub/',
-        help='Directory to save the track files, default: /data/public/upload/ucsc_trackhub/')
-    parser.add_argument('--server-url', default='http://159.226.118.232/upload/ucsc_trackhub',
-        help='Server to deposite the data, default: http://159.226.118.232/upload/ucsc_trackhub')
+        default='/data/upload/ucsc_trackhub',
+        help='Directory to save the track files, default: /data/upload/ucsc_trackhub')
+    parser.add_argument('--server-url', default='http://159.226.118.232/open/',
+        help='Server to deposite the data, default: http://159.226.118.232/open/')
     args=parser.parse_args()
     return args
 
@@ -65,6 +65,36 @@ def findfiles(which, where='.'):
     return [os.path.join(where, f) for f in fn_names]
 
 
+def listdir(x, recursive=False):
+    """Return the files in path
+    using os.walk()
+    """
+    file_list = []
+    if recursive:
+        for root, subdirs, files in os.walk(x):
+            for d in subdirs:
+                file_list.append(os.path.join(root, d))
+            for f in files:
+                file_list.append(os.path.join(root, f))
+    else:
+        file_list.extend(os.listdir(x))
+
+    return file_list
+
+
+def find_bw(x, bigbed=False):
+    """Return the files in path"""
+    assert isinstance(x, str)
+    m1 = re.compile('\.bw$|\.bigwig', re.IGNORECASE)
+    m2 = re.compile('\.bb$|\.bigbed', re.IGNORECASE)
+    if bigbed:
+        m=m2
+    else:
+        m=m1
+    fn = [i for i in listdir(x, recursive=True) if m.search(os.path.basename(i))]
+    return fn
+    
+
 def which(program):
     def is_exe(fpath):
         return os.path.isfile(fpath) and os.access(fpath, os.X_OK)
@@ -85,17 +115,17 @@ def which(program):
 def hub_url_checker(url):
     """Check the hubUrl by hubCheck"""
     hubCheck = which('hubCheck')
+    tag = False
     if hubCheck is None:
         logging.info('hubCheck not found, please check the url manually.')
-        return False
     else:
         p1 = subprocess.run(shlex.split('%s %s' % (hubCheck, url)),
             stderr=subprocess.PIPE)
         if p1.stderr.decode() == '':
-            return True
+            tag = True
         else:
             logging.error('hub-url error: %s' % url)
-            return False
+    return tag
 
 
 def source_checker(path):
@@ -105,23 +135,8 @@ def source_checker(path):
     check_bg1 = glob.glob(os.path.join(path, "*.bigBed"))
     check_bg2 = glob.glob(os.path.join(path, "*.bb"))
     check_bw1.extend(check_bw2)
-    if len(check_bw1) == 0:
-        return False
-    else:
-        return True
 
-
-def file_strand(fn):
-    """Determine the strand of file based on filename"""
-    assert isinstance(fn, str)
-    fn_name = os.path.splitext(fn)[0].lower()
-    if fn_name.endswith('fwd') or fn_name.endswith('watson') or fn_name.endswith('plus'):
-        strand = 'f'
-    elif fn_name.endswith('rev') or fn_name.endswith('crick') or fn_name.endswith('minus'):
-        strand = 'r'
-    else:
-        strand = 'other'
-    return strand
+    return len(check_bw1) # require bigWig 
 
 
 def pos_to_url(pos):
@@ -131,14 +146,13 @@ def pos_to_url(pos):
     """
     assert isinstance(pos, str)
     pos = re.sub(',', '', p) # remove comma from string
-    flag = re.fullmatch('^chr\w+\:\d+\-\d+$', pos)
-    if flag is None:
-        return None
-    else:
+    pos_url = None
+    if re.compile('^chr\w+\:\d+\-\d+$').fullmatch(pos):
         chr, coords = pos.split(':')
         start, end = coords.split('-')
         pos_url = '&position=%s%3A%s-%s' % (chr, start, end)
-        return pos_url
+
+    return pos_url
 
 
 def hub_to_url(hub_txt, genome, position=None):
@@ -158,8 +172,34 @@ def hub_to_url(hub_txt, genome, position=None):
         return base_url + pos_url
 
 
-def get_subgroups():
-    # Subgroups provide a way of tagging tracks.
+def color_picker(fn):
+    """Pick color based on the filename
+    f:      forward, '#2E3440'
+    r:      reverse, '#6DBFA7'
+    other:  others, '#lalala'
+
+    example: 
+    rnaseq.fwd.bigWig
+    
+    to-do:
+    assign multiple colors for tracks/files    
+    """
+    # Due to how code is extracted from the docs and run during tests, we
+    # need to import again inside a function. You don't normally need this.
+    import trackhub
+    assert isinstance(fn, str)
+    strand = get_strand(fn)
+
+    colors = {
+        'f': '#0000FE',
+        'r': '#FE0000',
+        'other': '#0000FE',
+    }
+    return trackhub.helpers.hex2rgb(colors[strand])
+
+
+def build_subgroups():
+    """Define the subgroups provide a way of tagging tracks."""
     subgroups = [
         # A subgroup for replicates
         trackhub.SubGroupDefinition(
@@ -173,6 +213,34 @@ def get_subgroups():
                 '4': 'rep4',
                 '5': 'rep5',
                 '6': 'rep6',
+            }
+        ),
+
+        # A subgroup for target
+        trackhub.SubGroupDefinition(
+            name='target',
+            label='target',
+            mapping={
+                'piwi': 'shPIWI',
+                'white': 'shWhite',
+                'h3k9': 'H3K9me3',
+                'other': 'Others',
+            }
+        ),
+
+        # A subgroup for stage
+        trackhub.SubGroupDefinition(
+            name='stage',
+            label='stage',
+            mapping={
+                '3h': '3h',
+                '6h': '6h',
+                '9h': '9h',
+                '12h': '12h',
+                'l1': 'L1',
+                'l2': 'L2',
+                'l3': 'L3',
+                'other': 'Others',
             }
         ),
 
@@ -199,9 +267,75 @@ def get_subgroups():
     return subgroups
 
 
-# def subgroups_from_filename(fn):
-def subgroups_picker(fn):
-    """Pick subgroups based on the filename
+def get_strand(fn):
+    """Determine the strand of file based on filename"""
+    assert isinstance(fn, str)
+    fn_name = os.path.splitext(fn)[0].lower()
+    r1 = re.compile('fwd$|watson$|plus$', re.IGNORECASE)
+    r2 = re.compile('rev$|crick$|minus$', re.IGNORECASE)
+
+    if r1.search(fn_name):
+        strand = 'f'
+    elif r2.search(fn_name):
+        strand = 'r'
+    else:
+        strand = 'other'
+
+    return strand
+
+
+def get_target(fn):
+    """Get the target of the file
+    shPIWI or shWhite
+    """
+    assert isinstance(fn, str)
+    fn_name = os.path.basename(fn).lower()
+    if fn_name.startswith('h3k9'):
+        target = 'h3k9'
+    elif fn_name.startswith('shpiwi'):
+        target = 'piwi'
+    elif fn_name.startswith('shwhite'):
+        target = 'white'
+    else:
+        target = 'other'
+
+    return target
+
+
+def get_stage(fn):
+    """Get the stage of the file
+    3h, 6h, 12h, L1, L2, L3
+    """
+    assert isinstance(fn, str)
+    fn_name = os.path.basename(fn).lower()
+    m = re.compile('\d+h_rep|\w\d_rep').search(fn_name)
+    if m:
+        stage = fn_name[m.start():m.end()]
+        stage = re.sub(r'_rep', '', stage)
+    else:
+        stage = 'other'
+
+    return stage
+
+
+def get_rep(fn):
+    """Get the replicate name of the file
+    rep1, rep2, ...
+    """
+    assert isinstance(fn, str)
+    fn_name = os.path.splitext(fn)[0].lower()
+    m = re.compile('_rep[0-9]').search(fn_name)
+    if m:
+        rep = fn_name[m.start():m.end()]
+        rep = re.sub('_rep', '', rep) # the number
+    else:
+        rep = 0
+
+    return rep
+
+
+def get_subgroup(fn):
+    """Determine the subgroups by filename
     This functions figures out subgroups based on the number in the
     filename.  Subgroups provided to the Track() constructor is
     a dictionary where keys are `rep` attributes from the subgroups added
@@ -213,9 +347,15 @@ def subgroups_picker(fn):
     """
     assert isinstance(fn, str)
     # 1. strand
-    strand = file_strand(fn)
+    strand = get_strand(fn)
 
-    # 2. kind, peak/signal
+    # 2. target
+    target = get_target(fn)
+
+    # 3. stage
+    stage = get_stage(fn)
+
+    # 4. kind, peak/signal
     fn_ext = os.path.splitext(fn)[1].lower()
     if fn_ext == '.bw' or fn_ext == '.bigwig':
         kind = 'signal'
@@ -224,47 +364,19 @@ def subgroups_picker(fn):
     else:
         kind = 'peak'
     
-    # 3. replicate
-    fn_name = os.path.splitext(fn)[0].lower()
-    fn_flag = re.compile('_rep[0-9]').search(fn_name)
-    if fn_flag is None:
-        rep = 0
-    else:
-        fn_flag_text = fn_name[fn_flag.start():fn_flag.end()]
-        rep = re.sub('_rep', '', fn_flag_text) # the number
+    # 5. replicate
+    rep = get_rep(fn)
+
+    ## construct subgroup
     track_subgroup = {
-        'rep': rep,
         'strand': strand,
+        'target': target,
+        'stage': stage,
         'kind': kind,
+        'rep': rep,
     }
+
     return track_subgroup
-
-
-# def color_from_filename(fn):
-def color_picker(fn):
-    """Pick color based on the filename
-    f:      forward, '#2E3440'
-    r:      reverse, '#6DBFA7'
-    other:  others, '#lalala'
-
-    example: 
-    rnaseq.fwd.bigWig
-    
-    to-do:
-    assign multiple colors for tracks/files    
-    """
-    # Due to how code is extracted from the docs and run during tests, we
-    # need to import again inside a function. You don't normally need this.
-    import trackhub
-    assert isinstance(fn, str)
-    strand = file_strand(fn)
-
-    colors = {
-        'f': '#2E3440',
-        'r': '#6DBFA7',
-        'other': '#1a1a1a',
-    }
-    return trackhub.helpers.hex2rgb(colors[strand])
 
 
 def create_composite(trackdb, short_label, bigwig_files, 
@@ -281,21 +393,20 @@ def create_composite(trackdb, short_label, bigwig_files,
         name='composite',
         short_label=short_label,
         long_label=short_label,
-        dimensions='dimX=strand dimY=rep dimA=kind',
+        dimensions='dimX=stage dimY=target dimA=kind dimB=rep dimC=strand',
         filterComposite='dimA',
-        sortOrder='rep=+ kind=-',
+        sortOrder='stage=+ target=+ kind=-',
         tracktype='bigWig',
         visibility='full'
     )
 
     # Add subgroups to the composite track
-    composite.add_subgroups(get_subgroups())
+    composite.add_subgroups(build_subgroups())
 
     # Add the composite track to the trackDb
     trackdb.add_tracks(composite)
 
     # CompositeTracks compose different ViewTracks.
-    # one for signal in bigWig, another one for bigBed regions.
     signal_view = trackhub.ViewTrack(
         name='signalviewtrack',
         short_label='Signal',
@@ -303,12 +414,12 @@ def create_composite(trackdb, short_label, bigwig_files,
         visibility='full',
         tracktype='bigWig')
 
-    signal_view2 = trackhub.ViewTrack(
-        name='singalviewtrack2',
-        short_label='Signal2',
-        view='signal',
-        visibility='full',
-        tracktype='bedGraph')
+    # signal_view2 = trackhub.ViewTrack(
+    #     name='singalviewtrack2',
+    #     short_label='Signal2',
+    #     view='signal',
+    #     visibility='full',
+    #     tracktype='bedGraph')
 
     regions_view = trackhub.ViewTrack(
         name='regionsviewtrack',
@@ -326,9 +437,9 @@ def create_composite(trackdb, short_label, bigwig_files,
             source=bigwig,
             visibility='full',
             tracktype='bigWig',
-            viewLimits='-2:2',
+            viewLimits='0:15',
             maxHeightPixels='8:40:128',
-            subgroups=subgroups_picker(bigwig),
+            subgroups=get_subgroup(bigwig),
             color=color_picker(bigwig))
 
         # Note that we add the track to the *view* rather than the trackDb as
@@ -346,7 +457,7 @@ def create_composite(trackdb, short_label, bigwig_files,
     #             name=trackhub.helpers.sanitize(os.path.basename(bg)),
     #             source=bg,
     #             visibility='full',
-    #             subgroups=subgroups_picker(bg),
+    #             subgroups=get_subgroup(bg),
     #             color=color_picker(bg),
     #             tracktype='bedGraph',
     #             viewLimits='-2:2',
@@ -368,7 +479,7 @@ def create_composite(trackdb, short_label, bigwig_files,
                 name=trackhub.helpers.sanitize(os.path.basename(bigbed)),
                 source=bigbed,
                 visibility='full',
-                subgroups=subgroups_picker(bigbed),
+                subgroups=get_subgroup(bigbed),
                 color=color_picker(bigbed),
                 tracktype='bigBed')
             regions_view.add_tracks(track)
@@ -376,6 +487,11 @@ def create_composite(trackdb, short_label, bigwig_files,
         pass
 
     return composite # CompositeTrack
+
+
+def get_bigwig(x):
+    """List bigwig files from x path"""
+    
 
 
 def main():
@@ -402,33 +518,9 @@ def main():
         except IOError:
             print('cannot create directory: ' + server_path)
 
-    # source directory
-    # option-1
-    # source/*.bigWig
-    #
-    # option-2
-    # source/*/*.bigWig
-    if source_checker(args.source) is True:
-        bw_dirs = [args.source, ]
-    else:
-        bw_dirs = [d for d in glob.glob(args.source + '/*') if os.path.isdir(d)]
-        bw_dirs = [d for d in bw_dirs if source_checker(d) is True]
-
-    # list files
-    bigwig_files = []
-    bigbed_files = []
-    for bw_dir in bw_dirs:
-        bw = findfiles('*.bigwig', bw_dir)
-        bw.extend(findfiles('*.bw', bw_dir))
-        bb = findfiles('*.bigbed', bw_dir)
-        bb.extend(findfiles('*.bb', bw_dir))
-
-        bigwig_files.extend(bw)
-        bigbed_files.extend(bb)
-
-    if len(bigwig_files) == 0:
-        raise ValueError('no *bigWig files found: %s' % args.source)
-
+    # get files
+    bw = find_bw(args.source)
+    bb = find_bw(args.source, bigbed=True)
 
     #################
     # Create tracks #
@@ -446,8 +538,8 @@ def main():
     composite = create_composite(
         trackdb=trackdb, 
         short_label=args.short_label, 
-        bigwig_files=bigwig_files, 
-        bigbed_files=bigbed_files)
+        bigwig_files=bw, 
+        bigbed_files=bb)
 
     trackhub.upload.upload_hub(hub=hub, host='localhost', 
         remote_dir=server_path)
@@ -461,12 +553,15 @@ def main():
     # server_url:  http://159.226.118.232/open/<server>/
     # hub_txt_url: http://159.226.118.232/open/<server>/<hub_name>.hub.txt
     hub_txt_url = os.path.join(args.server_url, args.server, hub_name, hub_name + '.hub.txt')
-    
+    hub_url = hub_to_url(hub_txt_url, args.genome)
+
+
     if hub_url_checker(hub_txt_url) is True:
         status = 'ok'
     else:
         status = 'failed'
     print('%10s : %s' % (status, hub_txt_url))
+    print('%10s : %s' % (status, hub_url))
 
 
     # Example uploading to a web server (not run):
