@@ -1,0 +1,171 @@
+[
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14138423","experiment_accession":"SRX7754702","run_accession":"SRR11117696","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/096/SRR11117696/SRR11117696_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/096/SRR11117696/SRR11117696_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14138422","experiment_accession":"SRX7754701","run_accession":"SRR11117697","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/097/SRR11117697/SRR11117697_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/097/SRR11117697/SRR11117697_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14138421","experiment_accession":"SRX7754700","run_accession":"SRR11117698","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/098/SRR11117698/SRR11117698_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/098/SRR11117698/SRR11117698_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14138420","experiment_accession":"SRX7754699","run_accession":"SRR11117699","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/099/SRR11117699/SRR11117699_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/099/SRR11117699/SRR11117699_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14140193","experiment_accession":"SRX7754734","run_accession":"SRR11117728","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14140192","experiment_accession":"SRX7754733","run_accession":"SRR11117729","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/029/SRR11117729/SRR11117729_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/029/SRR11117729/SRR11117729_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14140191","experiment_accession":"SRX7754732","run_accession":"SRR11117730","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/030/SRR11117730/SRR11117730_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/030/SRR11117730/SRR11117730_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14140190","experiment_accession":"SRX7754731","run_accession":"SRR11117731","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/031/SRR11117731/SRR11117731_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/031/SRR11117731/SRR11117731_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132415","experiment_accession":"SRX7759706","run_accession":"SRR11122690","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/090/SRR11122690/SRR11122690_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/090/SRR11122690/SRR11122690_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132414","experiment_accession":"SRX7759705","run_accession":"SRR11122691","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/091/SRR11122691/SRR11122691_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/091/SRR11122691/SRR11122691_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132413","experiment_accession":"SRX7759704","run_accession":"SRR11122692","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/092/SRR11122692/SRR11122692_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/092/SRR11122692/SRR11122692_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132412","experiment_accession":"SRX7759703","run_accession":"SRR11122693","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/093/SRR11122693/SRR11122693_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/093/SRR11122693/SRR11122693_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132411","experiment_accession":"SRX7759702","run_accession":"SRR11122694","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/094/SRR11122694/SRR11122694_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/094/SRR11122694/SRR11122694_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132410","experiment_accession":"SRX7759701","run_accession":"SRR11122695","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/095/SRR11122695/SRR11122695_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/095/SRR11122695/SRR11122695_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132409","experiment_accession":"SRX7759700","run_accession":"SRR11122696","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/096/SRR11122696/SRR11122696_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/096/SRR11122696/SRR11122696_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132408","experiment_accession":"SRX7759699","run_accession":"SRR11122697","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/097/SRR11122697/SRR11122697_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/097/SRR11122697/SRR11122697_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132423","experiment_accession":"SRX7759698","run_accession":"SRR11122698","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/098/SRR11122698/SRR11122698_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/098/SRR11122698/SRR11122698_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132422","experiment_accession":"SRX7759697","run_accession":"SRR11122699","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/099/SRR11122699/SRR11122699_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/099/SRR11122699/SRR11122699_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132421","experiment_accession":"SRX7759696","run_accession":"SRR11122700","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/000/SRR11122700/SRR11122700_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/000/SRR11122700/SRR11122700_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132420","experiment_accession":"SRX7759695","run_accession":"SRR11122701","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/001/SRR11122701/SRR11122701_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/001/SRR11122701/SRR11122701_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132419","experiment_accession":"SRX7759694","run_accession":"SRR11122702","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/002/SRR11122702/SRR11122702_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/002/SRR11122702/SRR11122702_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132418","experiment_accession":"SRX7759693","run_accession":"SRR11122703","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/003/SRR11122703/SRR11122703_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/003/SRR11122703/SRR11122703_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132416","experiment_accession":"SRX7759692","run_accession":"SRR11122704","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/004/SRR11122704/SRR11122704_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/004/SRR11122704/SRR11122704_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132407","experiment_accession":"SRX7759691","run_accession":"SRR11122705","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/005/SRR11122705/SRR11122705_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/005/SRR11122705/SRR11122705_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132406","experiment_accession":"SRX7759690","run_accession":"SRR11122706","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/006/SRR11122706/SRR11122706_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/006/SRR11122706/SRR11122706_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168388","experiment_accession":"SRX7786006","run_accession":"SRR11149926","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/026/SRR11149926/SRR11149926_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/026/SRR11149926/SRR11149926_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168387","experiment_accession":"SRX7786007","run_accession":"SRR11149927","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/027/SRR11149927/SRR11149927_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/027/SRR11149927/SRR11149927_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168386","experiment_accession":"SRX7786008","run_accession":"SRR11149928","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/028/SRR11149928/SRR11149928_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/028/SRR11149928/SRR11149928_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168385","experiment_accession":"SRX7786009","run_accession":"SRR11149929","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/029/SRR11149929/SRR11149929_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/029/SRR11149929/SRR11149929_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168384","experiment_accession":"SRX7786010","run_accession":"SRR11149930","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/030/SRR11149930/SRR11149930_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/030/SRR11149930/SRR11149930_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168383","experiment_accession":"SRX7786011","run_accession":"SRR11149931","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/031/SRR11149931/SRR11149931_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/031/SRR11149931/SRR11149931_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168382","experiment_accession":"SRX7786012","run_accession":"SRR11149932","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/032/SRR11149932/SRR11149932_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/032/SRR11149932/SRR11149932_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168381","experiment_accession":"SRX7786013","run_accession":"SRR11149933","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/033/SRR11149933/SRR11149933_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/033/SRR11149933/SRR11149933_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168380","experiment_accession":"SRX7786014","run_accession":"SRR11149934","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/034/SRR11149934/SRR11149934_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/034/SRR11149934/SRR11149934_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168379","experiment_accession":"SRX7786015","run_accession":"SRR11149935","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/035/SRR11149935/SRR11149935_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/035/SRR11149935/SRR11149935_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168378","experiment_accession":"SRX7786016","run_accession":"SRR11149936","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/036/SRR11149936/SRR11149936_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/036/SRR11149936/SRR11149936_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168377","experiment_accession":"SRX7786017","run_accession":"SRR11149937","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/037/SRR11149937/SRR11149937_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/037/SRR11149937/SRR11149937_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168376","experiment_accession":"SRX7786018","run_accession":"SRR11149938","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/038/SRR11149938/SRR11149938_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/038/SRR11149938/SRR11149938_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168375","experiment_accession":"SRX7786019","run_accession":"SRR11149939","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/039/SRR11149939/SRR11149939_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/039/SRR11149939/SRR11149939_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168395","experiment_accession":"SRX7786020","run_accession":"SRR11149940","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/040/SRR11149940/SRR11149940_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/040/SRR11149940/SRR11149940_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168393","experiment_accession":"SRX7786021","run_accession":"SRR11149941","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/041/SRR11149941/SRR11149941_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/041/SRR11149941/SRR11149941_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168392","experiment_accession":"SRX7786022","run_accession":"SRR11149942","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/042/SRR11149942/SRR11149942_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/042/SRR11149942/SRR11149942_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168391","experiment_accession":"SRX7786023","run_accession":"SRR11149943","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/043/SRR11149943/SRR11149943_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/043/SRR11149943/SRR11149943_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168390","experiment_accession":"SRX7786024","run_accession":"SRR11149944","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/044/SRR11149944/SRR11149944_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/044/SRR11149944/SRR11149944_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168389","experiment_accession":"SRX7786025","run_accession":"SRR11149945","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/045/SRR11149945/SRR11149945_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/045/SRR11149945/SRR11149945_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168454","experiment_accession":"SRX7786256","run_accession":"SRR11150176","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/076/SRR11150176/SRR11150176_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/076/SRR11150176/SRR11150176_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168453","experiment_accession":"SRX7786257","run_accession":"SRR11150177","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/077/SRR11150177/SRR11150177_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/077/SRR11150177/SRR11150177_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168444","experiment_accession":"SRX7786258","run_accession":"SRR11150178","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/078/SRR11150178/SRR11150178_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/078/SRR11150178/SRR11150178_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168443","experiment_accession":"SRX7786259","run_accession":"SRR11150179","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/079/SRR11150179/SRR11150179_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/079/SRR11150179/SRR11150179_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168442","experiment_accession":"SRX7786260","run_accession":"SRR11150180","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/080/SRR11150180/SRR11150180_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/080/SRR11150180/SRR11150180_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168441","experiment_accession":"SRX7786261","run_accession":"SRR11150181","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/081/SRR11150181/SRR11150181_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/081/SRR11150181/SRR11150181_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168440","experiment_accession":"SRX7786262","run_accession":"SRR11150182","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/082/SRR11150182/SRR11150182_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/082/SRR11150182/SRR11150182_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168439","experiment_accession":"SRX7786263","run_accession":"SRR11150183","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/083/SRR11150183/SRR11150183_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/083/SRR11150183/SRR11150183_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168438","experiment_accession":"SRX7786264","run_accession":"SRR11150184","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/084/SRR11150184/SRR11150184_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/084/SRR11150184/SRR11150184_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168437","experiment_accession":"SRX7786265","run_accession":"SRR11150185","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/085/SRR11150185/SRR11150185_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/085/SRR11150185/SRR11150185_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168436","experiment_accession":"SRX7786266","run_accession":"SRR11150186","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/086/SRR11150186/SRR11150186_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/086/SRR11150186/SRR11150186_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168435","experiment_accession":"SRX7786267","run_accession":"SRR11150187","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/087/SRR11150187/SRR11150187_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/087/SRR11150187/SRR11150187_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168433","experiment_accession":"SRX7786268","run_accession":"SRR11150188","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/088/SRR11150188/SRR11150188_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/088/SRR11150188/SRR11150188_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168432","experiment_accession":"SRX7786269","run_accession":"SRR11150189","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/089/SRR11150189/SRR11150189_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/089/SRR11150189/SRR11150189_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168459","experiment_accession":"SRX7786270","run_accession":"SRR11150190","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/090/SRR11150190/SRR11150190_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/090/SRR11150190/SRR11150190_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168458","experiment_accession":"SRX7786271","run_accession":"SRR11150191","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/091/SRR11150191/SRR11150191_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/091/SRR11150191/SRR11150191_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168457","experiment_accession":"SRX7786272","run_accession":"SRR11150192","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/092/SRR11150192/SRR11150192_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/092/SRR11150192/SRR11150192_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168456","experiment_accession":"SRX7786273","run_accession":"SRR11150193","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/093/SRR11150193/SRR11150193_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/093/SRR11150193/SRR11150193_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168434","experiment_accession":"SRX7786274","run_accession":"SRR11150194","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/094/SRR11150194/SRR11150194_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/094/SRR11150194/SRR11150194_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168455","experiment_accession":"SRX7786275","run_accession":"SRR11150195","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/095/SRR11150195/SRR11150195_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/095/SRR11150195/SRR11150195_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168428","experiment_accession":"SRX7786276","run_accession":"SRR11150196","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/096/SRR11150196/SRR11150196_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/096/SRR11150196/SRR11150196_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168452","experiment_accession":"SRX7786277","run_accession":"SRR11150197","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/097/SRR11150197/SRR11150197_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/097/SRR11150197/SRR11150197_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168451","experiment_accession":"SRX7786278","run_accession":"SRR11150198","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/098/SRR11150198/SRR11150198_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/098/SRR11150198/SRR11150198_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168450","experiment_accession":"SRX7786279","run_accession":"SRR11150199","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/099/SRR11150199/SRR11150199_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/099/SRR11150199/SRR11150199_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168449","experiment_accession":"SRX7786280","run_accession":"SRR11150200","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/000/SRR11150200/SRR11150200_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/000/SRR11150200/SRR11150200_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168448","experiment_accession":"SRX7786281","run_accession":"SRR11150201","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/001/SRR11150201/SRR11150201_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/001/SRR11150201/SRR11150201_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168447","experiment_accession":"SRX7786282","run_accession":"SRR11150202","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/002/SRR11150202/SRR11150202_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/002/SRR11150202/SRR11150202_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168446","experiment_accession":"SRX7786283","run_accession":"SRR11150203","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/003/SRR11150203/SRR11150203_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/003/SRR11150203/SRR11150203_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168445","experiment_accession":"SRX7786284","run_accession":"SRR11150204","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/004/SRR11150204/SRR11150204_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/004/SRR11150204/SRR11150204_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168464","experiment_accession":"SRX7786285","run_accession":"SRR11150205","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/005/SRR11150205/SRR11150205_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/005/SRR11150205/SRR11150205_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168463","experiment_accession":"SRX7786286","run_accession":"SRR11150206","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/006/SRR11150206/SRR11150206_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/006/SRR11150206/SRR11150206_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168462","experiment_accession":"SRX7786287","run_accession":"SRR11150207","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/007/SRR11150207/SRR11150207_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/007/SRR11150207/SRR11150207_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14168465","experiment_accession":"SRX7786288","run_accession":"SRR11150208","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/008/SRR11150208/SRR11150208_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/008/SRR11150208/SRR11150208_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14132417","experiment_accession":"SRX7789579","run_accession":"SRR11165064","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/064/SRR11165064/SRR11165064_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR111/064/SRR11165064/SRR11165064_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14548878","experiment_accession":"SRX8073329","run_accession":"SRR11497411","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR114/011/SRR11497411/SRR11497411_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR114/011/SRR11497411/SRR11497411_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN14548877","experiment_accession":"SRX8073330","run_accession":"SRR11497412","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR114/012/SRR11497412/SRR11497412_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR114/012/SRR11497412/SRR11497412_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN15249332","experiment_accession":"SRX8562123","run_accession":"SRR12030782","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR120/082/SRR12030782/SRR12030782_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR120/082/SRR12030782/SRR12030782_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN15249331","experiment_accession":"SRX8562122","run_accession":"SRR12030783","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR120/083/SRR12030783/SRR12030783_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR120/083/SRR12030783/SRR12030783_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN15249330","experiment_accession":"SRX8562121","run_accession":"SRR12030784","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR120/084/SRR12030784/SRR12030784_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR120/084/SRR12030784/SRR12030784_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+,
+{"study_accession":"PRJNA607400","sample_accession":"SAMN15249329","experiment_accession":"SRX8562120","run_accession":"SRR12030785","tax_id":"10090","scientific_name":"Mus musculus","fastq_ftp":"ftp.sra.ebi.ac.uk/vol1/fastq/SRR120/085/SRR12030785/SRR12030785_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR120/085/SRR12030785/SRR12030785_2.fastq.gz","submitted_ftp":"","sra_ftp":""}
+]
